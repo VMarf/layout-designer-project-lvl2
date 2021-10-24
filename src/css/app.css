@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.ttf");
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #CACACA;
+  background-color: #08020D;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* TODO: Добавь разрешение для десктопа */
+/* @media () {
+    h1 {
+        font-size: 60px;
+        line-height: 90px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: 57px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+} */
+/*# sourceMappingURL=app.css.map */
