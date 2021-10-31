@@ -1,0 +1,40 @@
+.button {
+    position: relative;
+    display: inline-block;
+    min-width: 135px;
+    padding: 16px 30px 16px 30px;
+    color: $dark-gray;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    vertical-align: top;
+    background-color: transparent;
+    border: 1px solid $dark-gray;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+
+    &:hover {
+        color: darken($color: $dark-gray, $amount: 20%);
+        border-color: darken($color: $dark-gray, $amount: 20%); 
+    }
+}
+
+.button--page-description {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    color: $white;
+    font-size: 13.3px;
+    line-height: 15px;
+    background-color: $green;
+    border: none;
+
+    &:hover {
+        color: $white;
+        background-color: darken($color: $green, $amount: 10%);
+        border-color: none; 
+    }
+}

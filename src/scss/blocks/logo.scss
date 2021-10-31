@@ -1,0 +1,19 @@
+.logo {
+    display: grid;
+    grid-template-columns: 24px auto;
+    grid-gap: 16px;
+    align-items: center;
+}
+
+.logo__text {
+    color: $white;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+
+    @media (min-width: $desktop-width) {
+        font-weight: 400;
+        line-height: 16px;
+    }
+}

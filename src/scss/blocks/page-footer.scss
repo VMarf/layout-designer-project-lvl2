@@ -1,0 +1,12 @@
+.page-footer {
+    background: linear-gradient(265.08deg, #95390C 14.9%, #5328A1 68.95%);
+}
+
+.page-footer__container {
+    padding: 0 20px;
+    
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}

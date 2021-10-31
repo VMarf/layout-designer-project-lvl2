@@ -1,0 +1,121 @@
+.page-header__container {
+    position: relative;
+    margin: 0 20px;
+    
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.page-header__inner {
+    position: absolute;
+    top: 27px;
+    width: 100%;
+
+    @media (min-width: $desktop-width) {
+        top: 25px;
+        display: grid;
+        grid-template-columns: auto 1fr 248px;
+        grid-column-gap: 90px;
+    }
+}
+
+.page-header__logo {
+    margin-bottom: 17px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}
+
+.page-header__nav {
+    margin-bottom: 18px;
+    font-size: 11px;
+    line-height: 13px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}
+
+.page-header__nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: $desktop-width) {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: inline-grid;
+        grid-template-columns: repeat(4, auto);
+        grid-column-gap: 24px;
+    }
+}
+
+.page-header__nav-item {
+    margin-bottom: 3px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 0;
+    }
+}
+
+.page-header__nav-item-link {
+    color: $dark-gray;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.4s;
+
+    &:hover {
+        color: $white;
+    }
+
+    &:not([href]) {
+        color: $gray;
+    }
+
+    &:not([href]):hover {
+        color: $gray;
+    }
+
+    @media (min-width: $desktop-width) {
+        font-weight: 400;
+    }
+}
+
+.page-header__search {
+    @media (min-width: $desktop-width) {
+        width: 248px;
+    }
+}
+
+.page-header__search-input {
+    display: block;
+    width: 100%;
+    max-width: 375px;
+    padding: 5px 10px;
+    color: $white;
+    font-weight: 400;
+    font-size: 13.3px;
+    line-height: 15px;
+    background-color: $dark-violet;
+    border: none;
+    border-radius: 50px;
+    transition: 0.4s;
+
+    &:hover {
+        color: darken($color: $white, $amount: 20%);
+        background-color: darken($color: $dark-violet, $amount: 5%);;
+    }
+}
+
+.page-header__search-input::placeholder {
+    color: $light-gray;
+    font-weight: 400;
+    font-size: 13.3px;
+    line-height: 15px;
+    text-transform: uppercase;
+}

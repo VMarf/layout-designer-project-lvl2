@@ -1,0 +1,104 @@
+.page-description {
+    padding: 250px 0 200px;
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: $desktop-width) {
+        padding: 200px 0; 
+    }
+}
+
+.page-description__container {
+    padding: 0 20px;
+    
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.page-description__form-wrapper {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.page-description__title {
+    text-align: center;
+}
+
+.page-description__subtitle {
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 31px;
+    }
+}
+
+.page-description__text {
+    margin: 0 0 16px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 17px;
+    }
+}
+
+.page-description__form-wrapper {
+    display: grid;
+    grid-template-areas:
+        "name-input"
+        "email-input"
+        "button" 
+    ;
+    grid-gap: 24px;
+
+    @media (min-width: $desktop-width) {
+        grid-template-areas:
+            "name-input email-input"
+            "button button" 
+        ;
+    }
+}
+
+.page-description__name-input,
+.page-description__email-input {
+    padding: 15px 22px;
+    color: $dark-gray;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    background-color: transparent;
+    border: 2px solid $dark-gray;
+    border-radius: 3px;
+    transition: 0.4s;
+
+    &:hover {
+        color: darken($color: $dark-gray, $amount: 20%);
+        border-color: darken($color: $dark-gray, $amount: 20%); 
+    }
+}
+
+.page-description__name-input::placeholder,
+.page-description__email-input::placeholder {
+    color: $dark-gray;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.page-description__name-input {
+    grid-area: name-input;
+}
+
+.page-description__email-input {
+    grid-area: email-input;
+}
+
+.page-description__button {
+    grid-area: button;
+}
