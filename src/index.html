@@ -14,7 +14,6 @@
     <!-- https://www.figma.com/file/b6AjhwQsQeSeoIteenOTIp/Hexlet-LayoutDesigner-Project.-Music-Box?node-id=0%3A1 -->
     <!-- sass /Users/Vladislav/Documents/Projects/local/layout-designer-project-lvl2/src/scss/app.scss /Users/Vladislav/Documents/Projects/local/layout-designer-project-lvl2/src/css/app.css -->
     <!-- https://jakearchibald.github.io/svgomg/ -->
-    <!-- TODO Step 3 -->
     <!-- TODO Step 4 -->
     <!-- TODO Step 5 -->
     <!-- TODO Step 6 -->
@@ -78,8 +77,40 @@
                 </form>
             </div>
         </section>
-        <section class="subscription">
-            <div class="subscription__container"></div>
+        <section class="subscription" id="page-pricing">
+            <div class="subscription__container">
+                <h2 class="subscription__title">Формы подписки</h2>
+                <ul class="subscription__list">
+                    <li class="subscription__item subscription__item--free">
+                        <h3 class="subscription__item-title">Бесплатная</h3>
+                        <div class="subscription__item-price-wrapper">
+                            <span class="subscription__item-price">0</span>
+                            <span class="subscription__item-price-currency">РУБ.</span>
+                        </div>
+                        <button class="button button--subscription subscription__item-button">ОФОРМИТЬ</button>
+                        <p class="subscription__item-text">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+                    </li>
+                    <li class="subscription__item subscription__item--standard">
+                        <h3 class="subscription__item-title">Стандартная</h3>
+                        <div class="subscription__item-price-wrapper">
+                            <span class="subscription__item-price">250</span>
+                            <span class="subscription__item-price-currency">РУБ.</span>
+                        </div>
+                        <button class="button button--subscription subscription__item-button">ОФОРМИТЬ</button>
+                        <p class="subscription__item-text">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+                    </li>
+                    <li class="subscription__item subscription__item--premium">
+                        <h3 class="subscription__item-title">Премиум</h3>
+                        <div class="subscription__item-price-wrapper">
+                            <span class="subscription__item-price">500</span>
+                            <span class="subscription__item-price-currency">РУБ.</span>
+                        </div>
+                        <button class="button button--subscription subscription__item-button">ОФОРМИТЬ</button>
+                        <p class="subscription__item-text">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+                    </li>
+                </ul>
+                <p class="subscription__text">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+            </div>
         </section>
     </main>
     <footer class="page-footer">

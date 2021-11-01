@@ -38,3 +38,18 @@
         border-color: none; 
     }
 }
+
+.button--subscription {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $white;
+    font-size: 16px;
+    line-height: 150%;
+    border-color: $white;
+
+    &:hover {
+        color: darken($color: $white, $amount: 20%);
+        border-color: darken($color: $white, $amount: 20%); 
+    }
+}
