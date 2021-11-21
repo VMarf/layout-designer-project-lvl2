@@ -33,7 +33,7 @@
     border: none;
 
     &:hover {
-        color: $white;
+        color: darken($color: $white, $amount: 20%);
         background-color: darken($color: $green, $amount: 10%);
         border-color: none; 
     }
@@ -52,4 +52,68 @@
         color: darken($color: $white, $amount: 20%);
         border-color: darken($color: $white, $amount: 20%); 
     }
+}
+
+.button--mobile-app {
+    min-width: 131px;
+    padding: 17px 40.5px;
+    color: $white;
+    text-transform: none;
+    background-color: $red;
+    border: none;
+    border-radius: 32px;
+
+    &:hover {
+        color: darken($color: $white, $amount: 20%);
+        background-color: darken($color: $red, $amount: 5%);
+    }
+}
+
+.button--with-icon {
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 16px;
+    align-items: center;
+    min-width: 200px;
+    padding: 21px 31px;
+    text-align: left;
+    border: none;
+}
+
+.button--mix {
+    background-color: $purple;
+
+    &:hover {
+        background-color: darken($color: $purple, $amount: 5%);
+    }
+}
+
+.button--favorites {
+    background-color: $red;
+
+    &:hover {
+        background-color: darken($color: $red, $amount: 5%);
+    }
+}
+
+.button__icon {
+    fill: $white;
+    transition: 0.4s;
+}
+
+.button--with-icon:hover .button__icon {
+    fill: darken($color: $white, $amount: 20%);
+}
+
+.button__text {
+    color: $white;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.button--with-icon:hover .button__text {
+    color: darken($color: $white, $amount: 20%);
 }

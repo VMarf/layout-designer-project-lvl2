@@ -30,7 +30,7 @@
 .subscription__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(auto, 380px));
-    grid-column-gap: 25px;
+    column-gap: 25px;
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@
     @media (min-width: $desktop-width) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-column-gap: 48px;
+        column-gap: 48px;
         margin-bottom: 43px;
     }
 }
@@ -113,7 +113,7 @@
     z-index: 200;
     display: grid;
     grid-template-columns: auto auto;
-    grid-column-gap: 16px;
+    column-gap: 16px;
     justify-content: center;
     margin-bottom: 40px;
 }

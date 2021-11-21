@@ -1,0 +1,75 @@
+.popular-tracks {
+    padding: 100px 0;
+}
+
+.popular-tracks__container {
+    padding: 0 20px;
+    
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+.popular-tracks__title {
+    margin-bottom: 48px;
+    color: $white;
+}
+
+.popular-tracks__tracks {
+    display: grid;
+    column-gap: 50px;
+    row-gap: 25px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: 750px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.popular-tracks__track {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 25px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.popular-tracks__track-container {
+    display: grid;
+    grid-template-columns: 55px minmax(auto, 250px);
+    column-gap: 15px;
+    align-items: center;
+}
+
+.popular-tracks__track-image {
+    width: 100%;
+    height: auto;
+}
+
+.popular-tracks__track-name {
+    display: block;
+    color: $white;
+    font-weight: 700;
+    font-size: 12.8px;
+    line-height: 150%;
+    text-transform: uppercase;
+}
+
+.popular-tracks__track-artist {
+    display: block;
+    color: $gray;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+}
+
+.popular-tracks__track-duration {
+    color: $gray;
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 150%;
+}

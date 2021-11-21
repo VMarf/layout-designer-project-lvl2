@@ -9,112 +9,227 @@
     <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
-    <!-- TODO Удалить -->
     <!-- https://github.com/VMarf/layout-designer-project-lvl2 -->
     <!-- https://www.figma.com/file/b6AjhwQsQeSeoIteenOTIp/Hexlet-LayoutDesigner-Project.-Music-Box?node-id=0%3A1 -->
-    <!-- sass /Users/Vladislav/Documents/Projects/local/layout-designer-project-lvl2/src/scss/app.scss /Users/Vladislav/Documents/Projects/local/layout-designer-project-lvl2/src/css/app.css -->
-    <!-- https://jakearchibald.github.io/svgomg/ -->
-    <!-- TODO Step 4 -->
-    <!-- TODO Step 5 -->
-    <!-- TODO Step 6 -->
-    <!-- TODO Step 7 -->
-    <!-- TODO Step 8 -->
-    <!-- TODO Step 9 -->
-    <!-- TODO Step 10 -->
-    <!-- TODO Проверка -->
-    <header class="page-header">
-        <div class="page-header__container">
-            <div class="page-header__inner">
-                <!-- TODO На странице с артистами добавь ссылку на главную -->
-                <a class="logo page-header__logo">
-                    <svg class="logo__svg" width="24" height="24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                        <g transform="translate(2 2)" stroke="#1565C0" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                          <circle fill="#E2F3FB" cx="50" cy="50" r="50"/>
-                          <path fill="#FFF" d="M70.966 19.242v15.247L34.99 40.511V25.289z"/>
-                          <ellipse fill="#FFF" cx="63.471" cy="66.44" rx="7.495" ry="5.93"/>
-                          <ellipse fill="#FFF" cx="27.495" cy="72.37" rx="7.495" ry="5.93"/>
-                          <path d="M34.99 40.643V72.37M70.966 35.011v31.434" fill="#E2F3FB"/>
-                        </g>
-                    </svg>
-                    <span class="logo__text">Music Box</span>
-                </a>
-                <nav class="page-header__nav">
-                    <ul class="page-header__nav-list">
-                        <li class="page-header__nav-item">
-                            <a class="page-header__nav-item-link">Главная</a>
-                        </li>
-                        <li class="page-header__nav-item">
-                            <a class="page-header__nav-item-link" href="#">Каталог</a>
-                        </li>
-                        <li class="page-header__nav-item">
-                            <a class="page-header__nav-item-link" href="#">Исполнители</a>
-                        </li>
-                        <li class="page-header__nav-item">
-                            <a class="page-header__nav-item-link" href="#">Контакты</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="page-header__search">
-                    <form action="">
-                        <input class="page-header__search-input" type="search" id="page-header__search-input" placeholder="Поиск...">
-                    </form>
+
+    <!-- npm install live-server node-sass -->
+    <!-- npx live-server -->
+    <!-- npx node-sass src/scss/app.scss --watch src/css/app.css -->
+    <div class="sticky-footer">
+        <header class="page-header">
+            <div class="page-header__container">
+                <div class="page-header__inner">
+                    <a class="logo page-header__logo">
+                        <svg class="logo__svg" width="24" height="24" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g transform="translate(2 2)" stroke="#1565C0" stroke-width="3.5" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                              <circle fill="#E2F3FB" cx="50" cy="50" r="50"/>
+                              <path fill="#FFF" d="M70.966 19.242v15.247L34.99 40.511V25.289z"/>
+                              <ellipse fill="#FFF" cx="63.471" cy="66.44" rx="7.495" ry="5.93"/>
+                              <ellipse fill="#FFF" cx="27.495" cy="72.37" rx="7.495" ry="5.93"/>
+                              <path d="M34.99 40.643V72.37M70.966 35.011v31.434" fill="#E2F3FB"/>
+                            </g>
+                        </svg>
+                        <span class="logo__text">Music Box</span>
+                    </a>
+                    <nav class="page-header__nav">
+                        <ul class="page-header__nav-list">
+                            <li class="page-header__nav-item">
+                                <a class="page-header__nav-item-link">Главная</a>
+                            </li>
+                            <li class="page-header__nav-item">
+                                <a class="page-header__nav-item-link" href="#">Каталог</a>
+                            </li>
+                            <li class="page-header__nav-item">
+                                <a class="page-header__nav-item-link" href="artist.html">Исполнители</a>
+                            </li>
+                            <li class="page-header__nav-item">
+                                <a class="page-header__nav-item-link" href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="page-header__search">
+                        <form action="">
+                            <input class="page-header__search-input" type="search" id="page-header__search-input" placeholder="Поиск...">
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <main class="page-main">
-        <section class="page-description" id="page-description">
-            <div class="page-description__container">
-                <h1 class="page-description__title">Онлайн музыка где угодно</h1>
-                <h2 class="page-description__subtitle">Без ограничений</h2>
-                <p class="page-description__text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
-                <form action="">
-                    <div class="page-description__form-wrapper">
-                        <input class="page-description__name-input" type="text" id="page-description__name-input" placeholder="Имя">
-                        <input class="page-description__email-input" type="email" id="page-description__email-input" placeholder="Email">
-                        <button class="button button--page-description page-description__button" type="submit">Получить доступ</button>
+        </header>
+        <main class="page-main">
+            <section class="page-description" id="page-description">
+                <div class="page-description__container">
+                    <h1 class="page-description__title">Онлайн музыка где угодно</h1>
+                    <h2 class="page-description__subtitle">Без ограничений</h2>
+                    <p class="page-description__text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+                    <form action="">
+                        <div class="page-description__form-wrapper">
+                            <input class="page-description__name-input" type="text" id="page-description__name-input" placeholder="Имя">
+                            <input class="page-description__email-input" type="email" id="page-description__email-input" placeholder="Email">
+                            <button class="button button--page-description page-description__button" type="submit">Получить доступ</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="subscription" id="page-pricing">
+                <div class="subscription__container">
+                    <h2 class="subscription__title">Формы подписки</h2>
+                    <ul class="subscription__list">
+                        <li class="subscription__item subscription__item--free">
+                            <h3 class="subscription__item-title">Бесплатная</h3>
+                            <div class="subscription__item-price-wrapper">
+                                <span class="subscription__item-price">0</span>
+                                <span class="subscription__item-price-currency">РУБ.</span>
+                            </div>
+                            <a class="button button--subscription subscription__item-button" href="#">ОФОРМИТЬ</a>
+                            <p class="subscription__item-text">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
+                        </li>
+                        <li class="subscription__item subscription__item--standard">
+                            <h3 class="subscription__item-title">Стандартная</h3>
+                            <div class="subscription__item-price-wrapper">
+                                <span class="subscription__item-price">250</span>
+                                <span class="subscription__item-price-currency">РУБ.</span>
+                            </div>
+                            <a class="button button--subscription subscription__item-button" href="#">ОФОРМИТЬ</a>
+                            <p class="subscription__item-text">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
+                        </li>
+                        <li class="subscription__item subscription__item--premium">
+                            <h3 class="subscription__item-title">Премиум</h3>
+                            <div class="subscription__item-price-wrapper">
+                                <span class="subscription__item-price">500</span>
+                                <span class="subscription__item-price-currency">РУБ.</span>
+                            </div>
+                            <a class="button button--subscription subscription__item-button" href="#">ОФОРМИТЬ</a>
+                            <p class="subscription__item-text">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
+                        </li>
+                    </ul>
+                    <p class="subscription__text">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+                </div>
+            </section>
+            <section class="last-news" id="page-news">
+                <div class="last-news__container">
+                    <h2 class="last-news__title">Последние новости</h2>
+                    <article class="last-news__item">
+                        <img class="last-news__item-image" src="images/Music to Be Murdered By.png" alt="Eminem">
+                        <div class="last-news__item-info">
+                            <h3 class="last-news__item-title">Music to Be Murdered By</h3>
+                            <p class="last-news__item-text">Новый альбом Eminem «Music to Be Murdered By» уже доступен в нашем сервисе. На альбоме вас ждёт 20 новых треков.</p>
+                            <div class="last-news__item-data">
+                                <a class="last-news__item-data-author-link" href="#">
+                                    <img class="last-news__item-data-author-avatar" src="images/avatar.png" alt="Stanley Hutchinson">
+                                    <span class="last-news__item-data-author">MUSIC BOX</span>
+                                </a>
+                                <time class="last-news__item-data-date" datetime="2020-01-17">17/01/2020</time>
+                            </div>
+                            <a class="button last-news__item-button" href="#">К АЛЬБОМУ</a>
+                        </div>
+                    </article>
+                    <article class="last-news__item last-news__item--revers">
+                        <img class="last-news__item-image" src="images/Ordinary Man.png" alt="Ozzy Osbourne">
+                        <div class="last-news__item-info">
+                            <h3 class="last-news__item-title">Ordinary Man</h3>
+                            <p class="last-news__item-text">Легенда рока Оззи Озборн спустя 10 лет выпустил новый альбом Ordinary Man. Слушайте в числе первых на Music Box</p>
+                            <div class="last-news__item-data">
+                                <a class="last-news__item-data-author-link" href="#">
+                                    <img class="last-news__item-data-author-avatar" src="images/avatar.png" alt="Stanley Hutchinson">
+                                    <span class="last-news__item-data-author">MUSIC BOX</span>
+                                </a>
+                                <time class="last-news__item-data-date" datetime="2020-02-24">24/02/2020</time>
+                            </div>
+                            <a class="button last-news__item-button" href="#">К АЛЬБОМУ</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="mobile-app" id="page-app">
+                <div class="mobile-app__container">
+                    <h2 class="mobile-app__title">Мобильное приложение</h2>
+                    <div class="mobile-app__content">
+                        <img class="mobile-app__image" src="images/iphone.png" alt="Apple iPhone 5s">
+                        <div class="mobile-app__text-wrapper">
+                            <p class="mobile-app__text">Воспользуйтесь нашим мобильным приложением. Оно позволит слушать музыку с любого устройства на базе операционных систем Androind и iOS</p>
+                            <p class="mobile-app__text">С тарифом «Премиум» приложение позволяет скачивать все композиции из нашей коллекции. Вы можете слушать музыку даже без интернета.</p>
+                            <a class="button button--mobile-app mobile-app__button" href="#">Скачать</a>
+                        </div>
                     </div>
-                </form>
+                </div>
+            </section>
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__top">
+                <div class="page-footer__top-container">
+                    <div class="page-footer__top-about-us">
+                        <h4 class="page-footer__top-about-us-title">О нас</h4>
+                        <ul class="page-footer__top-about-us-list">
+                            <li class="page-footer__top-about-us-item">
+                                <a class="page-footer__top-about-us-item-link" href="#">История компании</a>
+                            </li>
+                            <li class="page-footer__top-about-us-item">
+                                <a class="page-footer__top-about-us-item-link" href="#">Карьера</a>
+                            </li>
+                            <li class="page-footer__top-about-us-item">
+                                <a class="page-footer__top-about-us-item-link" href="#">Особенности</a>
+                            </li>
+                            <li class="page-footer__top-about-us-item">
+                                <a class="page-footer__top-about-us-item-link" href="#">Пресса</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__top-support">
+                        <h4 class="page-footer__top-support-title">Поддержка</h4>
+                        <ul class="page-footer__top-support-list">
+                            <li class="page-footer__top-support-item">
+                                <a class="page-footer__top-support-item-link" href="#">База знаний</a>
+                            </li>
+                            <li class="page-footer__top-support-item">
+                                <a class="page-footer__top-support-item-link" href="#">Тарифы</a>
+                            </li>
+                            <li class="page-footer__top-support-item">
+                                <a class="page-footer__top-support-item-link" href="#">Мобильное приложение</a>
+                            </li>
+                            <li class="page-footer__top-support-item">
+                                <a class="page-footer__top-support-item-link" href="#">Условия использования</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page-footer__top-contacts">
+                        <h4 class="page-footer__top-contacts-title">Контакты</h4>
+                        <a class="page-footer__top-contacts-email" href="mailto:hello@music.box">hello@music.box</a>
+                        <a class="page-footer__top-contacts-address" href="#">Russia, Moscow. Music Box studio</a>
+                        <a class="page-footer__top-contacts-phone-number" href="tel:+ 7 499 999 99 99">+ 7 499 999 99 99</a>
+                    </div>
+                    <div class="page-footer__top-subscribe">
+                        <h4 class="page-footer__top-subscribe-title">Подписывайтесь</h4>
+                        <div class="page-footer__top-subscribe-links-wrapper">
+                            <a class="page-footer__top-subscribe-link page-footer__top-subscribe-link--google-plus" href="#">Google+</a>
+                            <a class="page-footer__top-subscribe-link page-footer__top-subscribe-link--twitter" href="#">Twitter</a>
+                            <a class="page-footer__top-subscribe-link page-footer__top-subscribe-link--facebook" href="#">Facebook</a>
+                            <a class="page-footer__top-subscribe-link page-footer__top-subscribe-link--instagram" href="#">Instagram</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="subscription" id="page-pricing">
-            <div class="subscription__container">
-                <h2 class="subscription__title">Формы подписки</h2>
-                <ul class="subscription__list">
-                    <li class="subscription__item subscription__item--free">
-                        <h3 class="subscription__item-title">Бесплатная</h3>
-                        <div class="subscription__item-price-wrapper">
-                            <span class="subscription__item-price">0</span>
-                            <span class="subscription__item-price-currency">РУБ.</span>
-                        </div>
-                        <button class="button button--subscription subscription__item-button">ОФОРМИТЬ</button>
-                        <p class="subscription__item-text">Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама</p>
-                    </li>
-                    <li class="subscription__item subscription__item--standard">
-                        <h3 class="subscription__item-title">Стандартная</h3>
-                        <div class="subscription__item-price-wrapper">
-                            <span class="subscription__item-price">250</span>
-                            <span class="subscription__item-price-currency">РУБ.</span>
-                        </div>
-                        <button class="button button--subscription subscription__item-button">ОФОРМИТЬ</button>
-                        <p class="subscription__item-text">Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве</p>
-                    </li>
-                    <li class="subscription__item subscription__item--premium">
-                        <h3 class="subscription__item-title">Премиум</h3>
-                        <div class="subscription__item-price-wrapper">
-                            <span class="subscription__item-price">500</span>
-                            <span class="subscription__item-price-currency">РУБ.</span>
-                        </div>
-                        <button class="button button--subscription subscription__item-button">ОФОРМИТЬ</button>
-                        <p class="subscription__item-text">Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве</p>
-                    </li>
-                </ul>
-                <p class="subscription__text">На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету</p>
+            <div class="page-footer__bottom">
+                <div class="page-footer__bottom-container">
+                    <ul class="page-footer__bottom-nav">
+                        <li class="page-footer__bottom-nav-item">
+                            <a class="page-footer__bottom-nav-item-link" href="#">Магазин</a>
+                        </li>
+                        <li class="page-footer__bottom-nav-item">
+                            <a class="page-footer__bottom-nav-item-link" href="#">Обслуживание</a>
+                        </li>
+                        <li class="page-footer__bottom-nav-item">
+                            <a class="page-footer__bottom-nav-item-link" href="#">Блог</a>
+                        </li>
+                        <li class="page-footer__bottom-nav-item">
+                            <a class="page-footer__bottom-nav-item-link" href="#">Поддержка</a>
+                        </li>
+                        <li class="page-footer__bottom-nav-item">
+                            <a class="page-footer__bottom-nav-item-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <div class="page-footer__container"></div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>

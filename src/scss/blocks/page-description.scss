@@ -9,12 +9,32 @@
     }
 }
 
+.page-description--artist {
+    padding-top: 225px;
+    padding-bottom: 225px;
+    background-image: url("../images/Morten Harket.png");
+
+    @media (min-width: $desktop-width) {
+        padding-top: 250px; 
+    }
+}
+
 .page-description__container {
     padding: 0 20px;
     
     @media (min-width: $desktop-width) {
         width: 1200px;
         margin: 0 auto;
+    }
+}
+
+.page-description--artist .page-description__container {
+    padding: 0 20px;
+    
+    @media (min-width: $desktop-width) {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0;
     }
 }
 
@@ -25,6 +45,21 @@
 
 .page-description__title {
     text-align: center;
+}
+
+.page-description--artist .page-description__title {
+    margin-bottom: 16px;
+    color: $white;
+    text-align: left;
+}
+
+.page-description__artist-fans-count {
+    display: block;
+    margin-bottom: 48px;
+    color: $white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .page-description__subtitle {
@@ -97,6 +132,12 @@
 
 .page-description__email-input {
     grid-area: email-input;
+}
+
+.page-description__buttons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 24px;
 }
 
 .page-description__button {
