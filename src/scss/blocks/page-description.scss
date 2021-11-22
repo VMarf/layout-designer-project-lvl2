@@ -1,21 +1,17 @@
 .page-description {
-    padding: 250px 0 200px;
+    padding: 200px 0;
     background-image: url("../images/banner.png");
     background-position: center;
     background-size: cover;
-
-    @media (min-width: $desktop-width) {
-        padding: 200px 0; 
-    }
 }
 
 .page-description--artist {
-    padding-top: 225px;
+    padding-top: 200px;
     padding-bottom: 225px;
     background-image: url("../images/Morten Harket.png");
 
     @media (min-width: $desktop-width) {
-        padding-top: 250px; 
+        padding-top: 200px; 
     }
 }
 
@@ -38,9 +34,20 @@
     }
 }
 
+.page-description__form {
+    @media (min-width: $desktop-width) {
+        width: 570px;
+        margin: 0 auto;
+    }
+}
+
 .page-description__form-wrapper {
     max-width: 570px;
     margin: 0 auto;
+
+    @media (min-width: $desktop-width) {
+        width: 570px;
+    }
 }
 
 .page-description__title {

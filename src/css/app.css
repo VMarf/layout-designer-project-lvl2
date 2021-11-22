@@ -215,21 +215,18 @@ h4 {
       line-height: 16px; } }
 
 .page-description {
-  padding: 250px 0 200px;
+  padding: 200px 0;
   background-image: url("../images/banner.png");
   background-position: center;
   background-size: cover; }
-  @media (min-width: 1240px) {
-    .page-description {
-      padding: 200px 0; } }
 
 .page-description--artist {
-  padding-top: 225px;
+  padding-top: 200px;
   padding-bottom: 225px;
   background-image: url("../images/Morten Harket.png"); }
   @media (min-width: 1240px) {
     .page-description--artist {
-      padding-top: 250px; } }
+      padding-top: 200px; } }
 
 .page-description__container {
   padding: 0 20px; }
@@ -246,9 +243,17 @@ h4 {
       margin: 0 auto;
       padding: 0; } }
 
+@media (min-width: 1240px) {
+  .page-description__form {
+    width: 570px;
+    margin: 0 auto; } }
+
 .page-description__form-wrapper {
   max-width: 570px;
   margin: 0 auto; }
+  @media (min-width: 1240px) {
+    .page-description__form-wrapper {
+      width: 570px; } }
 
 .page-description__title {
   text-align: center; }
@@ -393,7 +398,7 @@ h4 {
   column-gap: 16px;
   align-items: center;
   min-width: 200px;
-  padding: 21px 31px;
+  padding: 20px 30px;
   text-align: left;
   border: none; }
 
@@ -510,6 +515,7 @@ h4 {
   z-index: 200;
   padding-bottom: 200px;
   color: #FFFFFF;
+  font-weight: 400;
   text-align: center; }
   @media (min-width: 1240px) {
     .subscription__item-title {
@@ -628,7 +634,7 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  text-transform: none; }
+  text-transform: capitalize; }
   @media (min-width: 1240px) {
     .last-news__item-title {
       margin-bottom: 30px;
